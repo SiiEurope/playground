@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+
+<%@ page import="java.util.Collection" %>
 <%@ page import="com.sii.playground.entities.CarManager" %>
 <%@ page import="com.sii.playground.entities.Car" %>
-<%@ page import="java.util.Collection" %>
 <%@ page import="com.sii.playground.web.ServletUtils" %>
 
 <!doctype html>
@@ -12,9 +13,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="noindex, nofollow">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link rel="stylesheet" href="<%=request.getContextPath()%>/public/css/sii-muster.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/public/css/main.css">
 
 	<link rel="shortcut icon" href="<%=request.getContextPath()%>/public/pics/favicon.ico">
 
