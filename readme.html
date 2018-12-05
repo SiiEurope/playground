@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Playground - Read Me</title>
+</head>
+
+<body>
+
+<h1>Playground - Read Me</h1>
+
+<h2>General</h2>
+
+<p>The project is intended to be used as a base for Java developers to demonstrate their skills in developing web applications.</p>
+
+<h2>Building the Project</h2>
+
+<p>The easiest way for building the project is to use Maven. Maven is not part of the source code.</p>
+
+<p>To build the project with Maven just run <code>mvn package</code> in the projects root directory.</p>
+
+<h2>Running the Project</h2>
+
+<p>For running the project you need a Java web server like Apache Tomcat. The web server is not part of the source code.</p>
+
+<p>The following steps describe the deployment and execution of the project for Apache Tomcat:</p>
+
+<ol>
+	<li>Rename <code>playground-1.0.war</code> from the <code>target</code> project directory to <code>playground.war</code></li>
+	<li>Copy <code>playground.war</code> to the <code>webapps</code> directory of your Tomcat installation</li>
+	<li>Run <code>bin/startup.sh</code> in your Tomcat installation to start the server</li>
+	<li>Open a web browser and go to <a href="http://localhost:8080/playground">http://localhost:8080/playground</a></li>
+</ol>
+
+<h2>Source Code</h2>
+
+<p>The project does not use any Java web frameworks and consists only of some simple JSP's and servlets. For UI the project uses the Bootstrap library.</p>
+
+<p>Important files:</p>
+
+<dl>
+	<dt>src/main/java/com/sii/playground/entities/Car.java</dt>
+	<dd>Model class for a car.</dd>
+	<dt>src/main/java/com/sii/playground/entities/CarManager.java</dt>
+	<dd>Service class for cars. Allows to retrieve, save and delete cars.</dd>
+	<dt>src/main/java/com/sii/playground/web/CarServlet.java</dt>
+	<dd>Servlet handling GET and POST requests related to cars</dd>
+	<dt>src/main/webapp/index.jsp</dt>
+	<dd>Starting page showing a list of cars.</dd>
+	<dt>src/main/webapp/car.jsp</dt>
+	<dd>Detail page for a car.</dd>
+</dl>
+
+</body>
+</html>
